@@ -1,0 +1,601 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/*HEADER
+--------------------------------------------------------------------------*/
+
+header {
+    background: linear-gradient( 135deg, #00577b 50%, #8d1919 50%);
+    box-sizing: border-box;
+    margin: 0;
+    width: 100%;
+    height: 23.5vw;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+.logo {
+    margin: 0%;
+}
+
+header img {
+    width: 15%;
+    margin: 0;
+    display: block;
+    padding: 0;
+    transform: translate(465%, 5%);
+}
+
+.burger {
+    width: 12%;
+    height: 2vw;
+    background-color: #fff;
+    margin: 2% 0;
+}
+
+header h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 12vw;
+    margin: 0%;
+    position: fixed;
+    color: #000;
+    display: inline;
+    transform: translate(50%, 20%);
+}
+
+span {
+    clip-path: polygon(0 0, 73% 0, 30% 110%, 0% 110%);
+    position: absolute;
+    color: #fff;
+    overflow: hidden;
+}
+
+/*MENU
+--------------------------------------------------------------------------*/
+
+.burger {
+    display: none;
+}
+
+.burger:checked ~ .burger-menu {
+    height: 300px;
+    transition: .5s ease;
+}
+
+.burger:checked ~ .burger-menu li a {
+    transition: .5s ease;
+    font-size: 250%;
+}
+
+.burger:checked ~ .hamburger .streg-top {
+    transform: rotate(-45deg);
+    transition: .3s ease;
+}
+
+.burger:checked ~ .hamburger .streg-midt {
+    display: none;
+}
+
+.burger:checked ~ .hamburger .streg-bund {
+    transform: rotate(45deg) translate(-20%, -110%);
+    transition: .2s ease;
+}
+
+
+.hamburger {
+    display: inline-block;
+    width: 12%;
+    cursor: pointer;
+}
+
+.hamburger hr {
+    color: #fff;
+    height: 1.5vw;
+    border: 0;
+    background: #fff;
+    transform: translate(100%, -200%);
+    margin: 10%;
+    transition: .3s ease;
+}
+
+.burger-menu {
+    height: 0;
+    position: absolute;
+    display: inline-block;
+    list-style: none;
+    background: #000;
+    padding-left: 2%;
+    padding-right: 10%;
+    transition: .2s ease;
+    z-index: 100;
+}
+
+li a {
+    font-size: 0vw;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+li a:hover {
+    color: #707c8e;
+}
+
+/*FORSIDE
+-----------------------------------------------------------------------*/
+
+.container {
+    display: block;
+    text-align: center;
+}
+
+#breaking img {
+    position: absolute;
+}
+
+.break {
+    margin-bottom: 100%;
+    margin-top: 40%;
+    text-align: center;
+    background: rgba(0, 0, 0);
+    color: #fff;
+    width: 60vw;
+    transform: translate(30%);
+}
+
+.break:hover {
+    width: 65vw;
+}
+
+.break p {
+    font-family: 'Oswald', 'sans-serif';
+    margin: 2%;
+}
+
+a {
+    text-decoration: none;
+}
+
+#blaa {
+    transform: translate(37%, -150%);
+    z-index: -3;
+}
+
+#rod {
+    transform: translate(-20%, -140%);
+    z-index: -4;
+}
+
+
+.artikler {
+    margin: 0;
+    vertical-align: middle;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#forside h2 {
+    display: block;
+    font-size: 250%;
+    font-family: 'Oswald', 'sans-serif';
+    margin-bottom: 0;
+    margin-top: 30%;
+    text-align: center;
+}
+
+.container h2 {
+    margin-top: 10%;
+}
+
+.artikler img {
+    box-sizing: border-box;
+    margin-bottom: 1%;
+    padding: 0;
+    flex: 1, 0, 150px;
+    width: 300px;
+    align-self: center;
+}
+
+.imgcon {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.imgcon p {
+    text-decoration: none;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    background: rgba(0, 0, 0, .7);
+    font-family: 'Oswald', sans-serif;
+    font-size: 120%;
+}
+
+.imgcon p:hover {
+    font-size: 150%;
+}
+
+#inbox {
+    text-align: center;
+    height: 200px;
+}
+
+#inbox p {
+    font-family: 'Oswald', 'sans-serif';
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.skriv-knap {
+
+    background: linear-gradient( 135deg, #00577b 50%, #8d1919 50%);
+    text-transform: uppercase;
+    color: white;
+    padding: 1%;
+    border: none;
+    font-size: 140%;
+    text-decoration: none;
+    cursor: pointer;
+    margin-bottom: 20%;
+    width: 50%;
+}
+
+/*OPBYGNING
+---------------------------------------------------------------------------*/
+
+.opbygning {
+    margin-bottom: 35%;
+    margin-top: 40%;
+}
+
+.opbygning h1,
+.opbygning p,
+.opbygning a {
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Oswald', 'sans-serif';
+    margin-left: 2%;
+    margin-right: 2%;
+    color: #000;
+    font-size: 100%;
+}
+
+.opbygning a {
+    background: linear-gradient( 135deg, #00577b 50%, #8d1919 50%);
+    padding: 3%;
+    color: #fff;
+    font-weight: 600;
+    font-size: 120%;
+    margin-bottom: 30%;
+}
+
+.opbygning h1 {
+    width: 95%;
+    margin-top: 0;
+    font-size: 190%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-52%, -200%);
+    color: #fff;
+    background: rgb(0, 0, 0, .7);
+    text-transform: uppercase;
+}
+
+.opbygning img {
+    width: 90%;
+    margin-left: 5%;
+}
+
+.opbygning a:hover {
+    padding: 2%;
+    font-size: 150%;
+}
+
+/*ARTIKLER
+----------------------------------------------------------------------*/
+
+.main {
+    margin: 30% 3%;
+}
+
+.main h1,
+.main h2,
+.main h3,
+.main h4 {
+    font-family: 'Oswald', sans-serif;
+}
+
+.main img {
+    width: 100%;
+}
+
+.main p {
+    font-size: 100%;
+    margin-bottom: 6%;
+    font-family: 'helvitica', sans-serif;
+
+}
+
+.main h3 {
+    font-size: 85%;
+    display: inline;
+}
+
+.rykop {
+    display: inline;
+}
+
+.space {
+    margin-bottom: 6%;
+}
+
+.main h1 {
+    font-size: 180%;
+    text-align: center;
+}
+
+li {}
+
+
+.main li {
+    font-family: 'Helvetica', sans-serif;
+    margin-bottom: 5%;
+}
+
+h2 {
+    font-family: 'Oswald', sans-serif;
+}
+
+.inbox hr {
+    color: #000;
+    height: 1.5vw;
+    border: 0;
+}
+
+/*MENU + HEADER
+----------------------------------------------------------------*/
+
+/*BREAKINGPOINT
+----------------------------------------------------------------*/
+@media only screen and (min-width: 550px){
+    
+    header{
+      height: 10%;  
+    }
+    
+    header img {
+    width: 10%;
+    float: right;
+    transform: translate(0%, 0%);
+    max-width: 65px;
+}
+
+
+header h1 {
+    font-size: 3em;
+    position: relative;
+    float: right;
+    transform: translate(0, 0);
+    top: 0;
+    margin: 0;
+}
+
+    
+    .burger {
+    display: none;
+}
+
+
+.hamburger hr {
+    display: none;
+}
+
+    .burger-menu{
+        box-sizing: border-box;
+        margin: 0;
+        margin-left: -2%;
+        width: 108%;
+        display: flex;
+        justify-content: space-between;
+        top: 104%
+        
+    }
+
+li a {
+    font-size: 145%;
+    width: 19vw;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    background: linear-gradient( 90deg, rgb(0, 0, 0) 50%, 93%, #fff 50%);
+    padding-left: 3%
+
+}
+    .burger-menu li{
+    
+    }
+
+li a:hover {
+    color: #707c8e;
+}
+
+    
+}
+
+
+
+/*Forside
+------------------------------------------------------------------------------*/
+
+/*BREAKINGPOINT 1
+----------------------------------------------------------------------*/
+
+@media only screen and (min-width: 420px) {
+
+    #blaa {
+        transform: translate(80%, -150%);
+    }
+
+    #rod {
+        transform: translate(-10%, -120%);
+    }
+
+    #forside h2 {
+        margin-top: 10%;
+    }
+    .break {
+        margin-bottom: 50%;
+        width: 40vw;
+        margin-left: 20%;
+
+    }
+
+    .break:hover {
+        width: 45vw;
+    }
+
+    /*BREAKINGPOINT 2
+--------------------------------------------------------------*/
+@media only screen and (min-width: 520px) {
+    
+    #rod{
+        width: 100%;
+        transform: translate(-10%, -130%);
+    }
+    
+    #blaa{
+        width: 100%;
+        transform: translate(10%, -120%);
+    }
+    
+    .break{
+        margin-top: 35%;
+    }
+    
+    .skriv-knap{
+        width: 30%;
+    }
+    
+/*BREAKINGPOINT 3
+    --------------------------------------------------------*/
+@media only screen and (min-width: 620px) {
+    
+    #rod{
+        width: 100%;
+        transform: translate(-8%, -140%);
+    }
+    
+    #blaa{
+        width: 100%;
+        transform: translate(10%, -140%);
+    }
+    
+    .break{
+        width: 30vw;
+        margin-left: 25%;
+    }
+    
+    .break:hover{
+        width: 35vw;
+    }
+    
+    .skriv-knap{
+        width: 30%;
+    }
+    }
+    
+/*BREAKINPOINT 4
+--------------------------------------------------*/
+    
+@media only screen and (min-width: 750px)
+    {    
+    .skriv-knap{
+        margin-bottom: 10%;
+        width: 20%;
+    }
+        
+        #rod{
+            width: 80%;
+        transform: translate(1%, -130%);
+        }
+        
+        #blaa{
+            width: 80%;
+            transform: translate(30%, -135%);
+        }
+        
+        .break{
+            margin-top: 30%;
+            width: 25%;
+            margin-left: 30%;
+            margin-bottom: 30%;
+        }
+        
+        .break:hover{
+            width: 30%;
+        }
+    
+}
+    
+/*BREAKINGPOINT 5
+-------------------------------------------------------------*/
+    
+    @media only screen and (min-width: 1000px){
+           .skriv-knap{
+        margin-bottom: 10%;
+        width: 10%;
+    }
+        
+        #rod{
+            width: 70%;
+        transform: translate(0%, -120%);
+        }
+        
+        #blaa{
+            width: 70%;
+            transform: translate(45%, -120%);
+        }
+        
+        .break{
+            margin-top: 20%;
+            width: 20%;
+            margin-left: 35%;
+            margin-bottom: 25%;
+        }
+        
+        .break:hover{
+            width: 22%;
+        }
+    }
+    
+/*MAIN
+--------------------------------------------------------------------------*/
+    
+/*BREAKINPOINT 1
+_______________________________________________________________________*/
+    
+    @media only screen and(min-width: 500px){
+        .main p{
+            margin-bottom: 0;
+        }
+        
+    }
+    
+
+    
+
+/*FONTS*/
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+/*font-family: 'Oswald', sans-serif;*/
